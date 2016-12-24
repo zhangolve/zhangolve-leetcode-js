@@ -24,10 +24,9 @@ var longestPalindrome = function(s) {
           
             max+=2;             //如果中心点两侧值相同，构成回文，则将max加上2
         }
-        console.log(max);
-        console.log(i-((max-1)/2));
+       
         newStr=s.substr(i-((max-1)/2),max);
-        console.log(newStr);
+       
         db.push(newStr);
     }
     for(var k=0;k<db.length;k++)
